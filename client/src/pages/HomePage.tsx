@@ -4,7 +4,7 @@
 
 
 import React from 'react';
-import { Container, Box, Typography, Button, Grid } from '@mui/material';
+import { Container, Box, Typography, Button, GridLegacy as Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';

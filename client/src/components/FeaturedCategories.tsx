@@ -18,7 +18,7 @@
 
 
 import React from 'react';
-import { Box, Typography, Grid, Card, CardMedia, CardContent, Button } from '@mui/material';
+import { Box, Typography, GridLegacy as Grid, Card, CardMedia, CardContent, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const FeaturedCategories: React.FC = () => {

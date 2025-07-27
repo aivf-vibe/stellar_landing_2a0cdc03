@@ -9,7 +9,7 @@
 
 
 import React from 'react';
-import { Box, Container, Grid, Typography, Link, IconButton } from '@mui/material';
+import { Box, Container, GridLegacy as Grid, Typography, Link, IconButton } from '@mui/material';
 import { Facebook, Twitter, Instagram, Pinterest } from '@mui/icons-material';
 
 const Footer: React.FC = () => {

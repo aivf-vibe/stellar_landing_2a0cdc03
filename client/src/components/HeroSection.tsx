@@ -15,7 +15,7 @@
 
 
 import React from 'react';
-import { Box, Container, Typography, Button, Grid } from '@mui/material';
+import { Box, Container, Typography, Button, GridLegacy as Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
