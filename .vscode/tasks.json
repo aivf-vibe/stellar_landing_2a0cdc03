@@ -1,0 +1,63 @@
+
+
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Backend",
+      "type": "shell",
+      "command": "node",
+      "args": ["server/index.js"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Start Frontend",
+      "type": "shell",
+      "command": "npm",
+      "args": ["start"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}/client"
+      }
+    },
+    {
+      "label": "Install All Dependencies",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install"],
+      "group": "build",
+      "dependsOrder": "sequence",
+      "dependsOn": ["Install Client Dependencies"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Install Client Dependencies",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install"],
+      "options": {
+        "cwd": "${workspaceFolder}/client"
+      }
+    }
+  ]
+}
+
+

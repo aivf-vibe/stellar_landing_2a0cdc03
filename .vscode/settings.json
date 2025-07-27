@@ -1,0 +1,19 @@
+
+{
+  "workbench.colorTheme": "Default Dark+",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/dist": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/dist": true
+  }
+}

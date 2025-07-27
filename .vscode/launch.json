@@ -1,0 +1,31 @@
+
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Backend",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/server/index.js",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Frontend",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/client/node_modules/.bin/react-scripts",
+      "args": ["start"],
+      "env": {
+        "BROWSER": "none"
+      },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/client"
+    }
+  ]
+}
+
